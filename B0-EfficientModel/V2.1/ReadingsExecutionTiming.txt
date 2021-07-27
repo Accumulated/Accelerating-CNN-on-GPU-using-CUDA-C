@@ -1,0 +1,91 @@
+
+
+Stem layer: 
+
+Time elapsed for Stem:  1.14883196 ms
+
+
+MBConv 1_0 details comming: 
+
+Time elapsed for MBConv 1_0:  0.82956803 ms
+
+
+MBConv 6_1 details comming: 
+
+Time elapsed for MBConv 6_1:  0.97497600 ms
+
+
+MBConv 2 details comming: 
+
+Time elapsed for MBConv 6_2:  1.17990398 ms
+
+
+MBConv 3 details comming: 
+
+Time elapsed for MBConv 6_3:  0.75072002 ms
+
+
+MBConv 4 details comming: 
+
+Time elapsed for MBConv 6_4:  0.76025599 ms
+
+
+MBConv 5 details comming: 
+
+Time elapsed for MBConv6_5:  0.63296002 ms
+
+
+MBConv 6 details comming: 
+
+Time elapsed for MBConv6_6:  0.81340802 ms
+
+
+MBConv 7 details comming: 
+
+Time elapsed for MBConv6_7:  0.82924801 ms
+
+
+MBConv 8 details comming: 
+
+Time elapsed for MBConv6_8:  1.14252806 ms
+
+
+MBConv 9 details comming: 
+
+Time elapsed for MBConv6_9:  1.15289605 ms
+
+
+MBConv 10 details comming: 
+
+Time elapsed for MBConv6_10:  1.06719995 ms
+
+
+MBConv 11 details comming: 
+
+Time elapsed for MBConv6_11:  1.22905600 ms
+
+
+MBConv 12 details comming: 
+
+Time elapsed for MBConv6_12:  1.78975999 ms
+
+
+MBConv 13 details comming: 
+
+Time elapsed for MBConv6_13:  1.65926397 ms
+
+
+MBConv 14 details comming: 
+
+Time elapsed for MBConv6_14:  1.65968001 ms
+
+
+MBConv 15 details comming: 
+
+Time elapsed for MBConv6_15:  1.62915206 ms
+
+
+Head layer details::
+
+Time elapsed for Head layer:  2.58649611 ms
+
