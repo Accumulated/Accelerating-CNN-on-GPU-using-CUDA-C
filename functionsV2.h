@@ -24,7 +24,9 @@ Matrix;
 
 void show_me_enhanced(Matrix* ptr, char* NamePtr);
 
-void BN_ALL_PRE_DEFINED(Matrix* D_input, int activate, Matrix *mean, Matrix *variance, Matrix *weights, Matrix *bias);
+void BN_ALL_PRE_DEFINED(Matrix* D_input, int activate, 
+			Matrix *mean, Matrix *variance, 
+			Matrix *weights, Matrix *bias);
 
 void set_allocate_copy_Matrix_Device(Matrix *child, Matrix *parent, char *notification);
 
@@ -34,22 +36,30 @@ void just_copy_HTD(Matrix *child, Matrix *parent, char *notification);
 
 void set_allocate_Host(Matrix *ptr, int height, int width, int depth);
 
-void set_allocate_copy_array_Device(Matrix *child, float *parent, int height, int width, int depth, char *notification);
+void set_allocate_copy_array_Device(Matrix *child, float *parent, 
+				    int height, int width, 
+				    int depth, char *notification);
 
-void set_allocate_copy_Matrix_Device_specific(Matrix *child, Matrix *parent, char *notification, int height, int width, int depth);
+void set_allocate_copy_Matrix_Device_specific(Matrix *child, Matrix *parent, 
+					      char *notification, int height,
+					      int width, int depth);
 
 void REDUCTION_SUM(Matrix* Output_Modified, Matrix *sum, Matrix *DMean);
 
 // Padding function used in convolution
-void Padding_Zeros_Function(Matrix* Original_Matrix_Before, int padding_Value, Matrix* padded_Matrix);
+void Padding_Zeros_Function(Matrix* Original_Matrix_Before,
+			    int padding_Value, Matrix* padded_Matrix);
 
 // Input unrolling function that calls the unrolling kernel
-void Input_Unroll_gpu(int st_stride, Matrix* Device_Input, Matrix* Device_Unrolled, int O_H, int O_W, int Filter_Size);
+void Input_Unroll_gpu(int st_stride, Matrix* Device_Input, 
+		      Matrix* Device_Unrolled, int O_H, 
+		      int O_W, int Filter_Size);
 
 // The final matrix multiplication for output calculation of Convolution
 void Conv_vidMultiplier(Matrix* out_11, Matrix* D_2, Matrix* D_1,
                         int ReconstructOutHieght, int ReconstructOutWidth, int ReconstructOutDepth,
-                        int ConvType, int stride_DW, int activation_type, int BIASED_CHOISE, Matrix *biasMat);
+                        int ConvType, int stride_DW, int activation_type,
+			int BIASED_CHOISE, Matrix *biasMat);
 						
 // Check for errors for efficient code writing
 void CheckCudaError(char* ptr, cudaError err);
@@ -68,24 +78,24 @@ void Conv2d_Layer(Matrix* InputIMG, Matrix* FilterK, Matrix* ConvOut,
 
 // Squeeze function
 void Squeeze_and_Excite(Matrix* InputIMG, Matrix* Result,
-						Matrix* Filter1, Matrix* Filter2,
-						int FilterDensity2, int FilterDensity1,
-						int input_channels, int output_channels,
-						float * First_bias, float *Second_bias);
+			Matrix* Filter1, Matrix* Filter2,
+			int FilterDensity2, int FilterDensity1,
+			int input_channels, int output_channels,
+			float * First_bias, float *Second_bias);
 
 // MBConv function
 void MBConv_Layer(Matrix* Input, Matrix* MBConvOut,
-    Matrix* F1, Matrix* F2, Matrix* F3, Matrix* F4, Matrix* F5,
-    int FD1, int FD2, int FD3, int FD4, int FD5,
-    int input_channels, int output_channels, int FilterSizeDW,
-    int Stride, int padding, int skip,
-    Matrix *bias1, Matrix *bias2,
-    Matrix *MBConv_expansion_conv_BN_mean,     Matrix *MBConv_expansion_conv_BN_variance,
-    Matrix *MBConv_expansion_conv_BN_weights,  Matrix *MBConv_expansion_conv_BN_bias,
-    Matrix *MBConv_depthwise_conv_BN_mean,     Matrix *MBConv_depthwise_conv_BN_variance,
-    Matrix *MBConv_depthwise_conv_BN_weights,  Matrix *MBConv_depthwise_conv_BN_bias,
-    Matrix *MBConv_project_conv_BN_mean,       Matrix *MBConv_project_conv_BN_variance,
-    Matrix *MBConv_project_conv_BN_weights,    Matrix *MBConv_project_conv_BN_bias);
+		Matrix* F1, Matrix* F2, Matrix* F3, Matrix* F4, Matrix* F5,
+		int FD1, int FD2, int FD3, int FD4, int FD5,
+		int input_channels, int output_channels, int FilterSizeDW,
+		int Stride, int padding, int skip,
+		Matrix *bias1, Matrix *bias2,
+		Matrix *MBConv_expansion_conv_BN_mean,     Matrix *MBConv_expansion_conv_BN_variance,
+		Matrix *MBConv_expansion_conv_BN_weights,  Matrix *MBConv_expansion_conv_BN_bias,
+		Matrix *MBConv_depthwise_conv_BN_mean,     Matrix *MBConv_depthwise_conv_BN_variance,
+		Matrix *MBConv_depthwise_conv_BN_weights,  Matrix *MBConv_depthwise_conv_BN_bias,
+		Matrix *MBConv_project_conv_BN_mean,       Matrix *MBConv_project_conv_BN_variance,
+		Matrix *MBConv_project_conv_BN_weights,    Matrix *MBConv_project_conv_BN_bias);
 
 void DEFINE_FILTERS_FOR_MBCONV(Matrix *f1, float *filter1, int h1, int w1, int dens1,
                                Matrix *f2, float *filter2, int h2, int w2, int dens2,
@@ -99,10 +109,10 @@ void DEFINE_FILTERS_FOR_MBCONV_BN(  Matrix *EXP_MEAN, 		  	float *filter1, 	int 
                                     Matrix *EXP_WEIGHTS, 	  	float *filter3, 	int size_3,
                                     Matrix *EXP_BIAS, 		  	float *filter4, 	int size_4,
                                   
-                                    Matrix *DW_MEAN, 		    float *filter5, 	int size_5,
+                                    Matrix *DW_MEAN, 		    	float *filter5, 	int size_5,
                                     Matrix *DW_VARIANCE, 	  	float *filter6, 	int size_6,
                                     Matrix *DW_WEIGHTS, 		float *filter7, 	int size_7,
-                                    Matrix *DW_BIAS, 		    float *filter8, 	int size_8,
+                                    Matrix *DW_BIAS, 		    	float *filter8, 	int size_8,
                                     
                                     Matrix *PRJ_MEAN, 		  	float *filter9, 	int size_9,
                                     Matrix *PRJ_VARIANCE, 		float *filter10, 	int size_10,
@@ -113,10 +123,10 @@ void DEFINE_FILTERS_FOR_MBCONV_BN(  Matrix *EXP_MEAN, 		  	float *filter1, 	int 
 void MBConv_SKIP_IDENTITY(Matrix *parent, Matrix *child);
 
 void STEM_LAYER(Matrix *DInput_Mat, Matrix *F_STEM,
-			  int image_height, int image_width, int image_depth,
-			  int filter_height, int filter_width, int filter_depth, int filter_density,
-			  int padding, int stride,
-			  Matrix *STEM_OUT);
+		int image_height, int image_width, int image_depth,
+		int filter_height, int filter_width, int filter_depth, int filter_density,
+		int padding, int stride,
+		Matrix *STEM_OUT);
 				  
 void HEAD_LAYER(Matrix *INPUT_MATRIX, Matrix *F_HEAD, Matrix *FC_WEIGHTS,
                 int filter_height, int filter_width, int filter_depth, int filter_density,
