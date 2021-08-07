@@ -4,3 +4,4 @@ The "EfficientNet" is the script you need to run; i.e. in Colab, \par
 !nvcc -o /content/src/EfficientNet /content/src/APP.cu /content/src/KERNELS.cu /content/src/FUNCTIONS.cu --use_fast_math
 !/content/src/EfficientNet
 
+using
