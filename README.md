@@ -62,5 +62,6 @@ References:
 [6] Udacity introduction to parallel programming https://youtube.com/playlist?list=PLAwxTw4SYaPnFKojVQrmyOGFCqHTxfdv2                         
 [7] Anderson, A., Vasudevan, A., Keane, C. and Gregg, D., 2017. Low-memory gemm-based convolution algorithms for deep neural networks. arXiv preprint arXiv:1709.03395.        
 [8] Chellapilla, K., Puri,S., & Simard,P.(2006).High performance convolutional neural networks for document processing.< https://hal.archives-ouvertes.fr/inria-00112631/document >. 
+
 [9] Warden, Pete. "Why GEMM Is at the Heart of Deep Learning". Pete Warden's Blog, April 20, 2015, https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/.       
 [10] Kirk, D.B. and Wen-Mei, W.H., 2016. Programming massively parallel processors: a hands-on approach. Morgan kaufmann.              
