@@ -54,13 +54,13 @@ Note: Any Code modifications or refactoring done and resulted in enhancement in 
 
 References:
 
-[1] Tan, Mingxing, and Quoc V. Le. “EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks.” ArXiv:1905.11946 [Cs, Stat], Sept. 2020. arXiv.org,
-[2] Sandler, Mark, et al. “MobileNetV2: Inverted Residuals and Linear Bottlenecks.” ArXiv:1801.04381 [Cs], Mar. 2019. arXiv.org, 
-[3] Hu, Jie, et al. “Squeeze-and-Excitation Networks.” ArXiv:1709.01507 [Cs], May 2019. arXiv.org, 
-[4] CUDA C++ Programming Guide. http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html. 
-[5] Cook, S., 2012. CUDA programming: a developer's guide to parallel computing with GPUs. Newnes. 
-[6] Udacity introduction to parallel programming https://youtube.com/playlist?list=PLAwxTw4SYaPnFKojVQrmyOGFCqHTxfdv2
-[7] Anderson, A., Vasudevan, A., Keane, C. and Gregg, D., 2017. Low-memory gemm-based convolution algorithms for deep neural networks. arXiv preprint arXiv:1709.03395.
+[1] Tan, Mingxing, and Quoc V. Le. “EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks.” ArXiv:1905.11946 [Cs, Stat], Sept. 2020. arXiv.org.      
+[2] Sandler, Mark, et al. “MobileNetV2: Inverted Residuals and Linear Bottlenecks.” ArXiv:1801.04381 [Cs], Mar. 2019. arXiv.org.        
+[3] Hu, Jie, et al. “Squeeze-and-Excitation Networks.” ArXiv:1709.01507 [Cs], May 2019. arXiv.org.        
+[4] CUDA C++ Programming Guide. http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html.              
+[5] Cook, S., 2012. CUDA programming: a developer's guide to parallel computing with GPUs. Newnes.                       
+[6] Udacity introduction to parallel programming https://youtube.com/playlist?list=PLAwxTw4SYaPnFKojVQrmyOGFCqHTxfdv2                         
+[7] Anderson, A., Vasudevan, A., Keane, C. and Gregg, D., 2017. Low-memory gemm-based convolution algorithms for deep neural networks. arXiv preprint arXiv:1709.03395.        
 [8] Chellapilla, K., Puri, S., & Simard,P.(2006).High performance convolutional neural networks for document processing. < https://hal.archives-ouvertes.fr/inria-00112631/document >.
-[9] Warden, Pete. "Why GEMM Is at the Heart of Deep Learning". Pete Warden's Blog, April 20, 2015, https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/.
-[10] Kirk, D.B. and Wen-Mei, W.H., 2016. Programming massively parallel processors: a hands-on approach. Morgan kaufmann.
+[9] Warden, Pete. "Why GEMM Is at the Heart of Deep Learning". Pete Warden's Blog, April 20, 2015, https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/.       
+[10] Kirk, D.B. and Wen-Mei, W.H., 2016. Programming massively parallel processors: a hands-on approach. Morgan kaufmann.              
