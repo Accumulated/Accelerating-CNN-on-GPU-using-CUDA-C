@@ -51,6 +51,9 @@ The results for the latest code edition:
 ![image](https://drive.google.com/uc?export=view&id=1SMSIAtuZUuY6-Zyo29gh6V2Mfk2foUSU)
 
 Note: Any Code modifications or refactoring done and resulted in enhancement in the execution time, the above table will be updated and a new version will be available.
+                                    
+Python model used to compare results:                
+https://www.kaggle.com/hmendonca/efficientnet-cifar-10-ignite
 
 References:
 
@@ -64,4 +67,4 @@ References:
 [8] Chellapilla, K., Puri,S., & Simard,P.(2006).High performance convolutional neural networks for document processing.
 	< https://hal.archives-ouvertes.fr/inria-00112631/document >.                                            
 [9] Warden, Pete. "Why GEMM Is at the Heart of Deep Learning". Pete Warden's Blog, April 20, 2015, https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/.       
-[10] Kirk, D.B. and Wen-Mei, W.H., 2016. Programming massively parallel processors: a hands-on approach. Morgan kaufmann.              
+[10] Kirk, D.B. and Wen-Mei, W.H., 2016. Programming massively parallel processors: a hands-on approach. Morgan kaufmann.             
