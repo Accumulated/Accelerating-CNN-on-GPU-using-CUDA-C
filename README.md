@@ -50,8 +50,10 @@ The results for the latest code edition:
 
 ![image](https://drive.google.com/uc?export=view&id=1SMSIAtuZUuY6-Zyo29gh6V2Mfk2foUSU)
 
-Note: Any Code modifications or refactoring done and resulted in enhancement in the execution time, the above table will be updated and a new version will be available.
-                                    
+Note:      
+1. Any Code modifications or refactoring done and resulted in enhancement in the execution time, the above table will be updated and a new version will be available.
+2. Code runs on Colab mainly, scaling to real GPU is in progress
+                               
 Python model used to compare results:                
 https://www.kaggle.com/hmendonca/efficientnet-cifar-10-ignite
 
