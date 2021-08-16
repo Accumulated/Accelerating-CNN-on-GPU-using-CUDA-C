@@ -48,7 +48,7 @@ The main building block for EfficientNet-B0 is MBConv layer, which contains the 
    
 The results for the latest code edition: 
 
-![image](https://drive.google.com/uc?export=view&id=1nfiz_JfIIQRWDtQEPohZmiaLsizNDixy)
+![image](https://drive.google.com/uc?export=view&id=1AR-oLFJgcckkLEnak28-wxq7BRIdRosU)
 
 Note:      
 1. Any Code modifications or refactoring done and resulted in enhancement in the execution time, the above table will be updated and a new version will be available.
