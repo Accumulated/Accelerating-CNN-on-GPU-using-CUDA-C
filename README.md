@@ -3,13 +3,13 @@
 The current CUDA model is implementing EfficientNet-B0 and uses pretrained weights which you can find and use in this link:
 https://drive.google.com/drive/folders/1v2o_xorzFvwhRLoJSwsNfcuU9ytGE_aJ?usp=sharing
 
-CUDA code implemented for the model has 10 msec for the whole model detection timing, which is triple the speed of the python code implemented on GPU. The results are shown for the whole model and each layer inside the EfficientNet model.
+CUDA code implemented for the model has 10 msec for the whole model detection timing, which is 4 times the speed of the python code implemented on GPU. The results are shown for the whole model and each layer inside the EfficientNet model.
 
 
 ![image](https://user-images.githubusercontent.com/20490432/127180264-6928bbb2-de7b-477f-9cda-b5e273da9c81.png)
 
 
-The code implements kxk Conv, DW Conv, BatchNorm and Squeeze-Excitation using parallel algorithms like GEMM and reduction algorithms. All algorithms in this code are implemented from scratch.
+The code implements kxk Conv, DW Conv, BatchNorm and Squeeze-Excitation using parallel algorithms like GEMM and reduction algorithms. All algorithms in this code are implemented from scratch. Concerning the optimization took into consideration: Shared memory traffic, Tiling, thread granuality. 
 
 The main building block for EfficientNet-B0 is MBConv layer, which contains the following sequence of operations:
 
@@ -48,7 +48,7 @@ The main building block for EfficientNet-B0 is MBConv layer, which contains the 
    
 The results for the latest code edition: 
 
-![image](https://drive.google.com/uc?export=view&id=1SMSIAtuZUuY6-Zyo29gh6V2Mfk2foUSU)
+![image](https://drive.google.com/uc?export=view&id=1nfiz_JfIIQRWDtQEPohZmiaLsizNDixy)
 
 Note:      
 1. Any Code modifications or refactoring done and resulted in enhancement in the execution time, the above table will be updated and a new version will be available.
