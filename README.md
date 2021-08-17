@@ -3,7 +3,7 @@
 The current CUDA model is implementing EfficientNet-B0 and uses pretrained weights which you can find and use in this link:
 https://drive.google.com/drive/folders/1v2o_xorzFvwhRLoJSwsNfcuU9ytGE_aJ?usp=sharing
 
-CUDA code implemented for the model has 10 msec for the whole model detection timing, which is 4 times the speed of the python code implemented on GPU. The results are shown for the whole model and each layer inside the EfficientNet model.
+CUDA code implemented for the model has 8 msec for the whole model detection timing, which is 4 times the speed of the python code implemented on GPU. The results are shown for the whole model and each layer inside the EfficientNet model.
 
 
 ![image](https://user-images.githubusercontent.com/20490432/127180264-6928bbb2-de7b-477f-9cda-b5e273da9c81.png)
