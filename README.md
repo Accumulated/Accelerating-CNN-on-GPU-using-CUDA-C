@@ -54,8 +54,8 @@ Note:
 1. Any Code modifications or refactoring done and resulted in enhancement in the execution time, the above table will be updated and a new version will be available.
 2. Code runs on Colab mainly, scaling to real GPU is in progress
 
-GPU details used on colab for testing the model:
-Device Number: 0
+GPU details used in colab for testing the model:
+Device Number: 0                               
   Device name: Tesla T4                          
   Memory Clock Rate (KHz): 5001000                          
   Memory Bus Width (bits): 256                          
