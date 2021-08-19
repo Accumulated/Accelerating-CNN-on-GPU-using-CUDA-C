@@ -55,13 +55,15 @@ Note:
 2. Code runs on Colab mainly, scaling to real GPU is in progress
 
 GPU details used in colab for testing the model:                               
-Device Number: 0                                                                   
-        Device name: Tesla T4                          
-        Memory Clock Rate (KHz): 5001000                          
-        Memory Bus Width (bits): 256                          
-        Number of totalGlobalMem 15843721216                          
-        Number of sharedMemPerBlock 49152                          
-                                                    
+
+    Device Number: 0   
+
+        Device name: Tesla T4                                                                              
+        Memory Clock Rate (KHz): 5001000                                                    
+        Memory Bus Width (bits): 256                                                                              
+        Number of totalGlobalMem 15843721216                                                                              
+        Number of sharedMemPerBlock 49152                                                                              
+                                                                                                                                         
         Number of warpSize 32                          
         Number of maxThreadsPerBlock 1024                          
         Number of maxBlocksPerMultiProcessor 16                          
