@@ -56,25 +56,25 @@ Note:
 
 GPU details used on colab for testing the model:
 Device Number: 0
-  Device name: Tesla T4
-  Memory Clock Rate (KHz): 5001000
-  Memory Bus Width (bits): 256
-  Number of totalGlobalMem 15843721216
-  Number of sharedMemPerBlock 49152
-
-  Number of warpSize 32
-  Number of maxThreadsPerBlock 1024
-  Number of maxBlocksPerMultiProcessor 16
-  Number of multiProcessorCount 40
-  Number of maxThreadsPerMultiProcessor 1024
-
-  Number of maxThreadsDim 1024
-  Number of maxGridSize 2147483647
-  Number of totalConstMem 65536
-  Number of sharedMemPerMultiprocessor 65536
-  Peak Memory Bandwidth (GB/s): 320.064000
-  asyncEngineCount: 3
-  
+  Device name: Tesla T4                          
+  Memory Clock Rate (KHz): 5001000                          
+  Memory Bus Width (bits): 256                          
+  Number of totalGlobalMem 15843721216                          
+  Number of sharedMemPerBlock 49152                          
+                                                    
+  Number of warpSize 32                          
+  Number of maxThreadsPerBlock 1024                          
+  Number of maxBlocksPerMultiProcessor 16                          
+  Number of multiProcessorCount 40                          
+  Number of maxThreadsPerMultiProcessor 1024                          
+                          
+  Number of maxThreadsDim 1024                          
+  Number of maxGridSize 2147483647                          
+  Number of totalConstMem 65536                          
+  Number of sharedMemPerMultiprocessor 65536                          
+  Peak Memory Bandwidth (GB/s): 320.064000                          
+  asyncEngineCount: 3                          
+                                                                                                          
 Python model used to compare results:                
 https://www.kaggle.com/hmendonca/efficientnet-cifar-10-ignite
 
