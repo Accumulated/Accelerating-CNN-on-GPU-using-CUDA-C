@@ -9,7 +9,8 @@ CUDA code implemented for the model has 8 msec for the whole model detection tim
 ![image](https://user-images.githubusercontent.com/20490432/127180264-6928bbb2-de7b-477f-9cda-b5e273da9c81.png)
 
 
-The code implements kxk Conv, DW Conv, BatchNorm and Squeeze-Excitation using parallel algorithms like GEMM and reduction algorithms. All algorithms in this code are implemented from scratch. Concerning the optimization took into consideration: Shared memory traffic, Tiling, thread granuality. 
+The code implements kxk Conv, DW Conv, BatchNorm and Squeeze-Excitation using parallel algorithms like GEMM , reduction and optimized matrix multiplication kernel.       
+All algorithms in this code are implemented from scratch. Concerning the optimization took into consideration: Shared memory traffic, Tiling, thread granularity. 
 
 The main building block for EfficientNet-B0 is MBConv layer, which contains the following sequence of operations:
 
