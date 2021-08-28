@@ -1,4 +1,4 @@
-# CNN-on-GPU-using-CUDA-C
+# Accelerating CNN on GPU using CUDA C
 
 The current CUDA model is implementing EfficientNet-B0 and uses pretrained weights which you can find and use in this link:
 https://drive.google.com/drive/folders/1v2o_xorzFvwhRLoJSwsNfcuU9ytGE_aJ?usp=sharing
