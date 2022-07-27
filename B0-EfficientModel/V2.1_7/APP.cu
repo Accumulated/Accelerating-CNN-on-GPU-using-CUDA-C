@@ -491,259 +491,261 @@ MBCONV1_0_flag = 1;
 DEFINE_FILTERS_FOR_MBCONV_BN(	
   &MBConv1_0_EXPD_BN_MEAN,      NULL, 0,
   &MBConv1_0_EXPD_BN_VARIANCE,	NULL, 0,
-  &MBConv1_0_EXPD_BN_WEIGHTS,		NULL, 0,
-  &MBConv1_0_EXPD_BN_BIAS,			NULL, 0,
+  &MBConv1_0_EXPD_BN_WEIGHTS,	NULL, 0,
+  &MBConv1_0_EXPD_BN_BIAS,		NULL, 0,
 
-  &MBConv1_0_DW_BN_MEAN,        MBConv1_0_depthwise_conv_BN_mean,		  sizeof(MBConv1_0_depthwise_conv_BN_mean) / sizeof(float), 		
-  &MBConv1_0_DW_BN_VARIANCE,		MBConv1_0_depthwise_conv_BN_variance,	sizeof(MBConv1_0_depthwise_conv_BN_variance) / sizeof(float),
+  &MBConv1_0_DW_BN_MEAN,        MBConv1_0_depthwise_conv_BN_mean,		sizeof(MBConv1_0_depthwise_conv_BN_mean) / sizeof(float), 		
+  &MBConv1_0_DW_BN_VARIANCE,	MBConv1_0_depthwise_conv_BN_variance,	sizeof(MBConv1_0_depthwise_conv_BN_variance) / sizeof(float),
   &MBConv1_0_DW_BN_WEIGHTS,     MBConv1_0_depthwise_conv_BN_weights,	sizeof(MBConv1_0_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv1_0_DW_BN_BIAS,				MBConv1_0_depthwise_conv_BN_bias,		  sizeof(MBConv1_0_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv1_0_DW_BN_BIAS,		MBConv1_0_depthwise_conv_BN_bias,		sizeof(MBConv1_0_depthwise_conv_BN_bias) / sizeof(float),
 
-  &MBConv1_0_PRJ_BN_MEAN,       MBConv1_0_project_conv_BN_mean,			  sizeof(MBConv1_0_project_conv_BN_mean) / sizeof(float),
-  &MBConv1_0_PRJ_BN_VARIANCE,		MBConv1_0_project_conv_BN_variance,		sizeof(MBConv1_0_project_conv_BN_variance) / sizeof(float),
+  &MBConv1_0_PRJ_BN_MEAN,       MBConv1_0_project_conv_BN_mean,			sizeof(MBConv1_0_project_conv_BN_mean) / sizeof(float),
+  &MBConv1_0_PRJ_BN_VARIANCE,	MBConv1_0_project_conv_BN_variance,		sizeof(MBConv1_0_project_conv_BN_variance) / sizeof(float),
   &MBConv1_0_PRJ_BN_WEIGHTS,    MBConv1_0_project_conv_BN_weights,		sizeof(MBConv1_0_project_conv_BN_weights) / sizeof(float),
-  &MBConv1_0_PRJ_BN_BIAS,				MBConv1_0_project_conv_BN_bias, 		  sizeof(MBConv1_0_project_conv_BN_bias) / sizeof(float));
+  &MBConv1_0_PRJ_BN_BIAS,		MBConv1_0_project_conv_BN_bias, 		sizeof(MBConv1_0_project_conv_BN_bias) / sizeof(float));
 
 MBCONV1_0_flag = 0;
 
 DEFINE_FILTERS_FOR_MBCONV_BN(	
-  &MBConv6_1_EXPD_BN_MEAN,      MBConv6_1_expansion_conv_BN_mean,		  sizeof(MBConv6_1_expansion_conv_BN_mean) / sizeof(float),
+  &MBConv6_1_EXPD_BN_MEAN,      MBConv6_1_expansion_conv_BN_mean,		sizeof(MBConv6_1_expansion_conv_BN_mean) / sizeof(float),
   &MBConv6_1_EXPD_BN_VARIANCE,	MBConv6_1_expansion_conv_BN_variance,	sizeof(MBConv6_1_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_1_EXPD_BN_WEIGHTS,   MBConv6_1_expansion_conv_BN_weights,	sizeof(MBConv6_1_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_1_EXPD_BN_BIAS,			MBConv6_1_expansion_conv_BN_bias,		  sizeof(MBConv6_1_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_1_EXPD_BN_BIAS,		MBConv6_1_expansion_conv_BN_bias,		sizeof(MBConv6_1_expansion_conv_BN_bias) / sizeof(float),
 
-  &MBConv6_1_DW_BN_MEAN,        MBConv6_1_depthwise_conv_BN_mean,		  sizeof(MBConv6_1_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_1_DW_BN_VARIANCE,		MBConv6_1_depthwise_conv_BN_variance,	sizeof(MBConv6_1_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_1_DW_BN_MEAN,        MBConv6_1_depthwise_conv_BN_mean,		sizeof(MBConv6_1_depthwise_conv_BN_mean) / sizeof(float),
+  &MBConv6_1_DW_BN_VARIANCE,	MBConv6_1_depthwise_conv_BN_variance,	sizeof(MBConv6_1_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_1_DW_BN_WEIGHTS,     MBConv6_1_depthwise_conv_BN_weights,	sizeof(MBConv6_1_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_1_DW_BN_BIAS,				MBConv6_1_depthwise_conv_BN_bias,		  sizeof(MBConv6_1_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_1_DW_BN_BIAS,		MBConv6_1_depthwise_conv_BN_bias,		sizeof(MBConv6_1_depthwise_conv_BN_bias) / sizeof(float),
 
-  &MBConv6_1_PRJ_BN_MEAN,       MBConv6_1_project_conv_BN_mean,			  sizeof(MBConv6_1_project_conv_BN_mean) / sizeof(float),
-  &MBConv6_1_PRJ_BN_VARIANCE,		MBConv6_1_project_conv_BN_variance,		sizeof(MBConv6_1_project_conv_BN_variance) / sizeof(float),
+  &MBConv6_1_PRJ_BN_MEAN,       MBConv6_1_project_conv_BN_mean,			sizeof(MBConv6_1_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_1_PRJ_BN_VARIANCE,	MBConv6_1_project_conv_BN_variance,		sizeof(MBConv6_1_project_conv_BN_variance) / sizeof(float),
   &MBConv6_1_PRJ_BN_WEIGHTS,    MBConv6_1_project_conv_BN_weights,		sizeof(MBConv6_1_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_1_PRJ_BN_BIAS,				MBConv6_1_project_conv_BN_bias, 		  sizeof(MBConv6_1_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_1_PRJ_BN_BIAS,		MBConv6_1_project_conv_BN_bias, 		sizeof(MBConv6_1_project_conv_BN_bias) / sizeof(float));
 
 DEFINE_FILTERS_FOR_MBCONV_BN(	
-  &MBConv6_2_EXPD_BN_MEAN,      MBConv6_2_expansion_conv_BN_mean,		  sizeof(MBConv6_2_expansion_conv_BN_mean) / sizeof(float),
+  &MBConv6_2_EXPD_BN_MEAN,      MBConv6_2_expansion_conv_BN_mean,		sizeof(MBConv6_2_expansion_conv_BN_mean) / sizeof(float),
   &MBConv6_2_EXPD_BN_VARIANCE,	MBConv6_2_expansion_conv_BN_variance,	sizeof(MBConv6_2_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_2_EXPD_BN_WEIGHTS,   MBConv6_2_expansion_conv_BN_weights,	sizeof(MBConv6_2_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_2_EXPD_BN_BIAS,			MBConv6_2_expansion_conv_BN_bias,		  sizeof(MBConv6_2_expansion_conv_BN_bias) / sizeof(float),
-  &MBConv6_2_DW_BN_MEAN,        MBConv6_2_depthwise_conv_BN_mean,		  sizeof(MBConv6_2_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_2_DW_BN_VARIANCE,		MBConv6_2_depthwise_conv_BN_variance,	sizeof(MBConv6_2_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_2_EXPD_BN_BIAS,		MBConv6_2_expansion_conv_BN_bias,		sizeof(MBConv6_2_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_2_DW_BN_MEAN,        MBConv6_2_depthwise_conv_BN_mean,		sizeof(MBConv6_2_depthwise_conv_BN_mean) / sizeof(float),
+  &MBConv6_2_DW_BN_VARIANCE,	MBConv6_2_depthwise_conv_BN_variance,	sizeof(MBConv6_2_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_2_DW_BN_WEIGHTS,     MBConv6_2_depthwise_conv_BN_weights,	sizeof(MBConv6_2_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_2_DW_BN_BIAS,			  MBConv6_2_depthwise_conv_BN_bias,		  sizeof(MBConv6_2_depthwise_conv_BN_bias) / sizeof(float),
-  &MBConv6_2_PRJ_BN_MEAN,       MBConv6_2_project_conv_BN_mean,			  sizeof(MBConv6_2_project_conv_BN_mean) / sizeof(float),
-  &MBConv6_2_PRJ_BN_VARIANCE,		MBConv6_2_project_conv_BN_variance,		sizeof(MBConv6_2_project_conv_BN_variance) / sizeof(float),
+  &MBConv6_2_DW_BN_BIAS,		MBConv6_2_depthwise_conv_BN_bias,		sizeof(MBConv6_2_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_2_PRJ_BN_MEAN,       MBConv6_2_project_conv_BN_mean,			sizeof(MBConv6_2_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_2_PRJ_BN_VARIANCE,	MBConv6_2_project_conv_BN_variance,		sizeof(MBConv6_2_project_conv_BN_variance) / sizeof(float),
   &MBConv6_2_PRJ_BN_WEIGHTS,    MBConv6_2_project_conv_BN_weights,		sizeof(MBConv6_2_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_2_PRJ_BN_BIAS,				MBConv6_2_project_conv_BN_bias, 		  sizeof(MBConv6_2_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_2_PRJ_BN_BIAS,		MBConv6_2_project_conv_BN_bias, 		sizeof(MBConv6_2_project_conv_BN_bias) / sizeof(float));
 
 DEFINE_FILTERS_FOR_MBCONV_BN(	
   &MBConv6_3_EXPD_BN_MEAN,      MBConv6_3_expansion_conv_BN_mean, 		sizeof(MBConv6_3_expansion_conv_BN_mean) / sizeof(float),
   &MBConv6_3_EXPD_BN_VARIANCE,	MBConv6_3_expansion_conv_BN_variance,	sizeof(MBConv6_3_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_3_EXPD_BN_WEIGHTS,   MBConv6_3_expansion_conv_BN_weights,	sizeof(MBConv6_3_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_3_EXPD_BN_BIAS,			MBConv6_3_expansion_conv_BN_bias,		  sizeof(MBConv6_3_expansion_conv_BN_bias) / sizeof(float),
-  &MBConv6_3_DW_BN_MEAN,        MBConv6_3_depthwise_conv_BN_mean,		  sizeof(MBConv6_3_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_3_DW_BN_VARIANCE,		MBConv6_3_depthwise_conv_BN_variance,	sizeof(MBConv6_3_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_3_EXPD_BN_BIAS,		MBConv6_3_expansion_conv_BN_bias,		sizeof(MBConv6_3_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_3_DW_BN_MEAN,        MBConv6_3_depthwise_conv_BN_mean,		sizeof(MBConv6_3_depthwise_conv_BN_mean) / sizeof(float),
+  &MBConv6_3_DW_BN_VARIANCE,	MBConv6_3_depthwise_conv_BN_variance,	sizeof(MBConv6_3_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_3_DW_BN_WEIGHTS,     MBConv6_3_depthwise_conv_BN_weights,	sizeof(MBConv6_3_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_3_DW_BN_BIAS,				MBConv6_3_depthwise_conv_BN_bias,		  sizeof(MBConv6_3_depthwise_conv_BN_bias) / sizeof(float),
-  &MBConv6_3_PRJ_BN_MEAN,       MBConv6_3_project_conv_BN_mean,			  sizeof(MBConv6_3_project_conv_BN_mean) / sizeof(float),
-  &MBConv6_3_PRJ_BN_VARIANCE,		MBConv6_3_project_conv_BN_variance,		sizeof(MBConv6_3_project_conv_BN_variance) / sizeof(float),
+  &MBConv6_3_DW_BN_BIAS,		MBConv6_3_depthwise_conv_BN_bias,		sizeof(MBConv6_3_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_3_PRJ_BN_MEAN,       MBConv6_3_project_conv_BN_mean,			sizeof(MBConv6_3_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_3_PRJ_BN_VARIANCE,	MBConv6_3_project_conv_BN_variance,		sizeof(MBConv6_3_project_conv_BN_variance) / sizeof(float),
   &MBConv6_3_PRJ_BN_WEIGHTS,    MBConv6_3_project_conv_BN_weights,		sizeof(MBConv6_3_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_3_PRJ_BN_BIAS,				MBConv6_3_project_conv_BN_bias, 		  sizeof(MBConv6_3_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_3_PRJ_BN_BIAS,		MBConv6_3_project_conv_BN_bias, 		sizeof(MBConv6_3_project_conv_BN_bias) / sizeof(float));
 
 DEFINE_FILTERS_FOR_MBCONV_BN(	
   &MBConv6_4_EXPD_BN_MEAN,      MBConv6_4_expansion_conv_BN_mean, 		sizeof(MBConv6_4_expansion_conv_BN_mean) / sizeof(float),
   &MBConv6_4_EXPD_BN_VARIANCE,	MBConv6_4_expansion_conv_BN_variance,	sizeof(MBConv6_4_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_4_EXPD_BN_WEIGHTS,   MBConv6_4_expansion_conv_BN_weights,	sizeof(MBConv6_4_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_4_EXPD_BN_BIAS,			MBConv6_4_expansion_conv_BN_bias,		  sizeof(MBConv6_4_expansion_conv_BN_bias) / sizeof(float),
-  &MBConv6_4_DW_BN_MEAN,        MBConv6_4_depthwise_conv_BN_mean,		  sizeof(MBConv6_4_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_4_DW_BN_VARIANCE,		MBConv6_4_depthwise_conv_BN_variance,	sizeof(MBConv6_4_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_4_EXPD_BN_BIAS,		MBConv6_4_expansion_conv_BN_bias,		sizeof(MBConv6_4_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_4_DW_BN_MEAN,        MBConv6_4_depthwise_conv_BN_mean,		sizeof(MBConv6_4_depthwise_conv_BN_mean) / sizeof(float),
+  &MBConv6_4_DW_BN_VARIANCE,	MBConv6_4_depthwise_conv_BN_variance,	sizeof(MBConv6_4_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_4_DW_BN_WEIGHTS,     MBConv6_4_depthwise_conv_BN_weights,	sizeof(MBConv6_4_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_4_DW_BN_BIAS,				MBConv6_4_depthwise_conv_BN_bias,		  sizeof(MBConv6_4_depthwise_conv_BN_bias) / sizeof(float),
-  &MBConv6_4_PRJ_BN_MEAN,       MBConv6_4_project_conv_BN_mean,			  sizeof(MBConv6_4_project_conv_BN_mean) / sizeof(float),
-  &MBConv6_4_PRJ_BN_VARIANCE,		MBConv6_4_project_conv_BN_variance,		sizeof(MBConv6_4_project_conv_BN_variance) / sizeof(float),
+  &MBConv6_4_DW_BN_BIAS,		MBConv6_4_depthwise_conv_BN_bias,		sizeof(MBConv6_4_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_4_PRJ_BN_MEAN,       MBConv6_4_project_conv_BN_mean,			sizeof(MBConv6_4_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_4_PRJ_BN_VARIANCE,	MBConv6_4_project_conv_BN_variance,		sizeof(MBConv6_4_project_conv_BN_variance) / sizeof(float),
   &MBConv6_4_PRJ_BN_WEIGHTS,    MBConv6_4_project_conv_BN_weights,		sizeof(MBConv6_4_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_4_PRJ_BN_BIAS,				MBConv6_4_project_conv_BN_bias, 		  sizeof(MBConv6_4_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_4_PRJ_BN_BIAS,		MBConv6_4_project_conv_BN_bias, 		sizeof(MBConv6_4_project_conv_BN_bias) / sizeof(float));
 
 DEFINE_FILTERS_FOR_MBCONV_BN(	
-  &MBConv6_5_EXPD_BN_MEAN,      MBConv6_5_expansion_conv_BN_mean,		  sizeof(MBConv6_5_expansion_conv_BN_mean) / sizeof(float),
+  &MBConv6_5_EXPD_BN_MEAN,      MBConv6_5_expansion_conv_BN_mean,		sizeof(MBConv6_5_expansion_conv_BN_mean) / sizeof(float),
   &MBConv6_5_EXPD_BN_VARIANCE,	MBConv6_5_expansion_conv_BN_variance,	sizeof(MBConv6_5_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_5_EXPD_BN_WEIGHTS,   MBConv6_5_expansion_conv_BN_weights,	sizeof(MBConv6_5_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_5_EXPD_BN_BIAS,			MBConv6_5_expansion_conv_BN_bias,		  sizeof(MBConv6_5_expansion_conv_BN_bias) / sizeof(float),
-  &MBConv6_5_DW_BN_MEAN,        MBConv6_5_depthwise_conv_BN_mean,		  sizeof(MBConv6_5_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_5_DW_BN_VARIANCE,		MBConv6_5_depthwise_conv_BN_variance,	sizeof(MBConv6_5_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_5_EXPD_BN_BIAS,		MBConv6_5_expansion_conv_BN_bias,		sizeof(MBConv6_5_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_5_DW_BN_MEAN,        MBConv6_5_depthwise_conv_BN_mean,		sizeof(MBConv6_5_depthwise_conv_BN_mean) / sizeof(float),
+  &MBConv6_5_DW_BN_VARIANCE,	MBConv6_5_depthwise_conv_BN_variance,	sizeof(MBConv6_5_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_5_DW_BN_WEIGHTS,     MBConv6_5_depthwise_conv_BN_weights,	sizeof(MBConv6_5_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_5_DW_BN_BIAS,				MBConv6_5_depthwise_conv_BN_bias,		  sizeof(MBConv6_5_depthwise_conv_BN_bias) / sizeof(float),
-  &MBConv6_5_PRJ_BN_MEAN,       MBConv6_5_project_conv_BN_mean,			  sizeof(MBConv6_5_project_conv_BN_mean) / sizeof(float),
-  &MBConv6_5_PRJ_BN_VARIANCE,		MBConv6_5_project_conv_BN_variance,		sizeof(MBConv6_5_project_conv_BN_variance) / sizeof(float),
+  &MBConv6_5_DW_BN_BIAS,		MBConv6_5_depthwise_conv_BN_bias,		sizeof(MBConv6_5_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_5_PRJ_BN_MEAN,       MBConv6_5_project_conv_BN_mean,			sizeof(MBConv6_5_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_5_PRJ_BN_VARIANCE,	MBConv6_5_project_conv_BN_variance,		sizeof(MBConv6_5_project_conv_BN_variance) / sizeof(float),
   &MBConv6_5_PRJ_BN_WEIGHTS,    MBConv6_5_project_conv_BN_weights,		sizeof(MBConv6_5_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_5_PRJ_BN_BIAS,				MBConv6_5_project_conv_BN_bias, 		  sizeof(MBConv6_5_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_5_PRJ_BN_BIAS,		MBConv6_5_project_conv_BN_bias, 		sizeof(MBConv6_5_project_conv_BN_bias) / sizeof(float));
 
 DEFINE_FILTERS_FOR_MBCONV_BN(	
-  &MBConv6_6_EXPD_BN_MEAN,      MBConv6_6_expansion_conv_BN_mean,		  sizeof(MBConv6_6_expansion_conv_BN_mean) / sizeof(float),
+  &MBConv6_6_EXPD_BN_MEAN,      MBConv6_6_expansion_conv_BN_mean,		sizeof(MBConv6_6_expansion_conv_BN_mean) / sizeof(float),
   &MBConv6_6_EXPD_BN_VARIANCE,	MBConv6_6_expansion_conv_BN_variance,	sizeof(MBConv6_6_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_6_EXPD_BN_WEIGHTS,   MBConv6_6_expansion_conv_BN_weights,	sizeof(MBConv6_6_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_6_EXPD_BN_BIAS,			MBConv6_6_expansion_conv_BN_bias,		  sizeof(MBConv6_6_expansion_conv_BN_bias) / sizeof(float),
-  &MBConv6_6_DW_BN_MEAN,        MBConv6_6_depthwise_conv_BN_mean,		  sizeof(MBConv6_6_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_6_DW_BN_VARIANCE,		MBConv6_6_depthwise_conv_BN_variance,	sizeof(MBConv6_6_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_6_EXPD_BN_BIAS,		MBConv6_6_expansion_conv_BN_bias,		sizeof(MBConv6_6_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_6_DW_BN_MEAN,        MBConv6_6_depthwise_conv_BN_mean,		sizeof(MBConv6_6_depthwise_conv_BN_mean) / sizeof(float),
+  &MBConv6_6_DW_BN_VARIANCE,	MBConv6_6_depthwise_conv_BN_variance,	sizeof(MBConv6_6_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_6_DW_BN_WEIGHTS,     MBConv6_6_depthwise_conv_BN_weights,	sizeof(MBConv6_6_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_6_DW_BN_BIAS,				MBConv6_6_depthwise_conv_BN_bias,		  sizeof(MBConv6_6_depthwise_conv_BN_bias) / sizeof(float),
-  &MBConv6_6_PRJ_BN_MEAN,       MBConv6_6_project_conv_BN_mean,			  sizeof(MBConv6_6_project_conv_BN_mean) / sizeof(float),
-  &MBConv6_6_PRJ_BN_VARIANCE,		MBConv6_6_project_conv_BN_variance,		sizeof(MBConv6_6_project_conv_BN_variance) / sizeof(float),
+  &MBConv6_6_DW_BN_BIAS,		MBConv6_6_depthwise_conv_BN_bias,		sizeof(MBConv6_6_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_6_PRJ_BN_MEAN,       MBConv6_6_project_conv_BN_mean,			sizeof(MBConv6_6_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_6_PRJ_BN_VARIANCE,	MBConv6_6_project_conv_BN_variance,		sizeof(MBConv6_6_project_conv_BN_variance) / sizeof(float),
   &MBConv6_6_PRJ_BN_WEIGHTS,    MBConv6_6_project_conv_BN_weights,		sizeof(MBConv6_6_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_6_PRJ_BN_BIAS,				MBConv6_6_project_conv_BN_bias, 		  sizeof(MBConv6_6_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_6_PRJ_BN_BIAS,		MBConv6_6_project_conv_BN_bias, 		sizeof(MBConv6_6_project_conv_BN_bias) / sizeof(float));
 
 DEFINE_FILTERS_FOR_MBCONV_BN(	
-  &MBConv6_7_EXPD_BN_MEAN,      MBConv6_7_expansion_conv_BN_mean,		  sizeof(MBConv6_7_expansion_conv_BN_mean) / sizeof(float),
+  &MBConv6_7_EXPD_BN_MEAN,      MBConv6_7_expansion_conv_BN_mean,		sizeof(MBConv6_7_expansion_conv_BN_mean) / sizeof(float),
   &MBConv6_7_EXPD_BN_VARIANCE,	MBConv6_7_expansion_conv_BN_variance,	sizeof(MBConv6_7_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_7_EXPD_BN_WEIGHTS,   MBConv6_7_expansion_conv_BN_weights,	sizeof(MBConv6_7_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_7_EXPD_BN_BIAS,			MBConv6_7_expansion_conv_BN_bias,		  sizeof(MBConv6_7_expansion_conv_BN_bias) / sizeof(float),
-  &MBConv6_7_DW_BN_MEAN,        MBConv6_7_depthwise_conv_BN_mean,		  sizeof(MBConv6_7_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_7_DW_BN_VARIANCE,		MBConv6_7_depthwise_conv_BN_variance,	sizeof(MBConv6_7_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_7_EXPD_BN_BIAS,		MBConv6_7_expansion_conv_BN_bias,		sizeof(MBConv6_7_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_7_DW_BN_MEAN,        MBConv6_7_depthwise_conv_BN_mean,		sizeof(MBConv6_7_depthwise_conv_BN_mean) / sizeof(float),
+  &MBConv6_7_DW_BN_VARIANCE,	MBConv6_7_depthwise_conv_BN_variance,	sizeof(MBConv6_7_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_7_DW_BN_WEIGHTS,     MBConv6_7_depthwise_conv_BN_weights,	sizeof(MBConv6_7_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_7_DW_BN_BIAS,				MBConv6_7_depthwise_conv_BN_bias,		  sizeof(MBConv6_7_depthwise_conv_BN_bias) / sizeof(float),
-  &MBConv6_7_PRJ_BN_MEAN,       MBConv6_7_project_conv_BN_mean,			  sizeof(MBConv6_7_project_conv_BN_mean) / sizeof(float),
-  &MBConv6_7_PRJ_BN_VARIANCE,		MBConv6_7_project_conv_BN_variance,		sizeof(MBConv6_7_project_conv_BN_variance) / sizeof(float),
+  &MBConv6_7_DW_BN_BIAS,		MBConv6_7_depthwise_conv_BN_bias,		sizeof(MBConv6_7_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_7_PRJ_BN_MEAN,       MBConv6_7_project_conv_BN_mean,			sizeof(MBConv6_7_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_7_PRJ_BN_VARIANCE,	MBConv6_7_project_conv_BN_variance,		sizeof(MBConv6_7_project_conv_BN_variance) / sizeof(float),
   &MBConv6_7_PRJ_BN_WEIGHTS,    MBConv6_7_project_conv_BN_weights,		sizeof(MBConv6_7_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_7_PRJ_BN_BIAS,				MBConv6_7_project_conv_BN_bias, 		  sizeof(MBConv6_7_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_7_PRJ_BN_BIAS,		MBConv6_7_project_conv_BN_bias, 		sizeof(MBConv6_7_project_conv_BN_bias) / sizeof(float));
 
 DEFINE_FILTERS_FOR_MBCONV_BN(	
-  &MBConv6_8_EXPD_BN_MEAN,      MBConv6_8_expansion_conv_BN_mean,		  sizeof(MBConv6_8_expansion_conv_BN_mean) / sizeof(float),
+  &MBConv6_8_EXPD_BN_MEAN,      MBConv6_8_expansion_conv_BN_mean,		sieof(MBConv6_8_expansion_conv_BN_mean) / sizeof(float),
   &MBConv6_8_EXPD_BN_VARIANCE,	MBConv6_8_expansion_conv_BN_variance,	sizeof(MBConv6_8_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_8_EXPD_BN_WEIGHTS,   MBConv6_8_expansion_conv_BN_weights,	sizeof(MBConv6_8_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_8_EXPD_BN_BIAS,			MBConv6_8_expansion_conv_BN_bias,		  sizeof(MBConv6_8_expansion_conv_BN_bias) / sizeof(float),
-  &MBConv6_8_DW_BN_MEAN,        MBConv6_8_depthwise_conv_BN_mean,		  sizeof(MBConv6_8_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_8_DW_BN_VARIANCE,		MBConv6_8_depthwise_conv_BN_variance,	sizeof(MBConv6_8_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_8_EXPD_BN_BIAS,		MBConv6_8_expansion_conv_BN_bias,		sieof(MBConv6_8_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_8_DW_BN_MEAN,        MBConv6_8_depthwise_conv_BN_mean,		sieof(MBConv6_8_depthwise_conv_BN_mean) / sizeof(float),
+  &MBConv6_8_DW_BN_VARIANCE,	MBConv6_8_depthwise_conv_BN_variance,	sizeof(MBConv6_8_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_8_DW_BN_WEIGHTS,     MBConv6_8_depthwise_conv_BN_weights,	sizeof(MBConv6_8_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_8_DW_BN_BIAS,				MBConv6_8_depthwise_conv_BN_bias,		  sizeof(MBConv6_8_depthwise_conv_BN_bias) / sizeof(float),
-  &MBConv6_8_PRJ_BN_MEAN,       MBConv6_8_project_conv_BN_mean,			  sizeof(MBConv6_8_project_conv_BN_mean) / sizeof(float),
-  &MBConv6_8_PRJ_BN_VARIANCE,		MBConv6_8_project_conv_BN_variance,		sizeof(MBConv6_8_project_conv_BN_variance) / sizeof(float),
+  &MBConv6_8_DW_BN_BIAS,		MBConv6_8_depthwise_conv_BN_bias,		sieof(MBConv6_8_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_8_PRJ_BN_MEAN,       MBConv6_8_project_conv_BN_mean,			sieof(MBConv6_8_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_8_PRJ_BN_VARIANCE,	MBConv6_8_project_conv_BN_variance,		sizeof(MBConv6_8_project_conv_BN_variance) / sizeof(float),
   &MBConv6_8_PRJ_BN_WEIGHTS,    MBConv6_8_project_conv_BN_weights,		sizeof(MBConv6_8_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_8_PRJ_BN_BIAS,				MBConv6_8_project_conv_BN_bias, 		  sizeof(MBConv6_8_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_8_PRJ_BN_BIAS,		MBConv6_8_project_conv_BN_bias, 		sieof(MBConv6_8_project_conv_BN_bias) / sizeof(float));
 
 DEFINE_FILTERS_FOR_MBCONV_BN(	
-  &MBConv6_9_EXPD_BN_MEAN,      MBConv6_9_expansion_conv_BN_mean,		  sizeof(MBConv6_9_expansion_conv_BN_mean) / sizeof(float),
+  &MBConv6_9_EXPD_BN_MEAN,      MBConv6_9_expansion_conv_BN_mean,		sieof(MBConv6_9_expansion_conv_BN_mean) / sizeof(float),
   &MBConv6_9_EXPD_BN_VARIANCE,	MBConv6_9_expansion_conv_BN_variance,	sizeof(MBConv6_9_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_9_EXPD_BN_WEIGHTS,   MBConv6_9_expansion_conv_BN_weights,	sizeof(MBConv6_9_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_9_EXPD_BN_BIAS,			MBConv6_9_expansion_conv_BN_bias,		  sizeof(MBConv6_9_expansion_conv_BN_bias) / sizeof(float),
-  &MBConv6_9_DW_BN_MEAN,        MBConv6_9_depthwise_conv_BN_mean,		  sizeof(MBConv6_9_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_9_DW_BN_VARIANCE,		MBConv6_9_depthwise_conv_BN_variance,	sizeof(MBConv6_9_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_9_EXPD_BN_BIAS,		MBConv6_9_expansion_conv_BN_bias,		sieof(MBConv6_9_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_9_DW_BN_MEAN,        MBConv6_9_depthwise_conv_BN_mean,		sieof(MBConv6_9_depthwise_conv_BN_mean) / sizeof(float),
+  &MBConv6_9_DW_BN_VARIANCE,	MBConv6_9_depthwise_conv_BN_variance,	sizeof(MBConv6_9_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_9_DW_BN_WEIGHTS,     MBConv6_9_depthwise_conv_BN_weights,	sizeof(MBConv6_9_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_9_DW_BN_BIAS,				MBConv6_9_depthwise_conv_BN_bias,		  sizeof(MBConv6_9_depthwise_conv_BN_bias) / sizeof(float),
-  &MBConv6_9_PRJ_BN_MEAN,       MBConv6_9_project_conv_BN_mean,			  sizeof(MBConv6_9_project_conv_BN_mean) / sizeof(float),
-  &MBConv6_9_PRJ_BN_VARIANCE,		MBConv6_9_project_conv_BN_variance,		sizeof(MBConv6_9_project_conv_BN_variance) / sizeof(float),
+  &MBConv6_9_DW_BN_BIAS,		MBConv6_9_depthwise_conv_BN_bias,		sieof(MBConv6_9_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_9_PRJ_BN_MEAN,       MBConv6_9_project_conv_BN_mean,			sieof(MBConv6_9_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_9_PRJ_BN_VARIANCE,	MBConv6_9_project_conv_BN_variance,		sizeof(MBConv6_9_project_conv_BN_variance) / sizeof(float),
   &MBConv6_9_PRJ_BN_WEIGHTS,    MBConv6_9_project_conv_BN_weights,		sizeof(MBConv6_9_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_9_PRJ_BN_BIAS,				MBConv6_9_project_conv_BN_bias, 		  sizeof(MBConv6_9_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_9_PRJ_BN_BIAS,		MBConv6_9_project_conv_BN_bias, 		sieof(MBConv6_9_project_conv_BN_bias) / sizeof(float));
 
 DEFINE_FILTERS_FOR_MBCONV_BN(	
-  &MBConv6_10_EXPD_BN_MEAN,     MBConv6_10_expansion_conv_BN_mean,    sizeof(MBConv6_10_expansion_conv_BN_mean) / sizeof(float),
-  &MBConv6_10_EXPD_BN_VARIANCE,	MBConv6_10_expansion_conv_BN_variance,sizeof(MBConv6_10_expansion_conv_BN_variance) / sizeof(float),
+  &MBConv6_10_EXPD_BN_MEAN,     MBConv6_10_expansion_conv_BN_mean,    	sizeof(MBConv6_10_expansion_conv_BN_mean) / sizeof(float),
+  &MBConv6_10_EXPD_BN_VARIANCE,	MBConv6_10_expansion_conv_BN_variance,	sizeof(MBConv6_10_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_10_EXPD_BN_WEIGHTS,  MBConv6_10_expansion_conv_BN_weights,	sizeof(MBConv6_10_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_10_EXPD_BN_BIAS,			MBConv6_10_expansion_conv_BN_bias,		sizeof(MBConv6_10_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_10_EXPD_BN_BIAS,		MBConv6_10_expansion_conv_BN_bias,		sizeof(MBConv6_10_expansion_conv_BN_bias) / sizeof(float),
   &MBConv6_10_DW_BN_MEAN,       MBConv6_10_depthwise_conv_BN_mean,		sizeof(MBConv6_10_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_10_DW_BN_VARIANCE,		MBConv6_10_depthwise_conv_BN_variance,sizeof(MBConv6_10_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_10_DW_BN_VARIANCE,	MBConv6_10_depthwise_conv_BN_variance,	sizeof(MBConv6_10_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_10_DW_BN_WEIGHTS,    MBConv6_10_depthwise_conv_BN_weights,	sizeof(MBConv6_10_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_10_DW_BN_BIAS,				MBConv6_10_depthwise_conv_BN_bias,		sizeof(MBConv6_10_depthwise_conv_BN_bias) / sizeof(float),
-  &MBConv6_10_PRJ_BN_MEAN,      MBConv6_10_project_conv_BN_mean,		  sizeof(MBConv6_10_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_10_DW_BN_BIAS,		MBConv6_10_depthwise_conv_BN_bias,		sizeof(MBConv6_10_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_10_PRJ_BN_MEAN,      MBConv6_10_project_conv_BN_mean,		sieof(MBConv6_10_project_conv_BN_mean) / sizeof(float),
   &MBConv6_10_PRJ_BN_VARIANCE,	MBConv6_10_project_conv_BN_variance,	sizeof(MBConv6_10_project_conv_BN_variance) / sizeof(float),
   &MBConv6_10_PRJ_BN_WEIGHTS,   MBConv6_10_project_conv_BN_weights,		sizeof(MBConv6_10_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_10_PRJ_BN_BIAS,			MBConv6_10_project_conv_BN_bias, 		  sizeof(MBConv6_10_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_10_PRJ_BN_BIAS,		MBConv6_10_project_conv_BN_bias, 		sieof(MBConv6_10_project_conv_BN_bias) / sizeof(float));
 
 DEFINE_FILTERS_FOR_MBCONV_BN(	
   &MBConv6_11_EXPD_BN_MEAN,     MBConv6_11_expansion_conv_BN_mean,		sizeof(MBConv6_11_expansion_conv_BN_mean) / sizeof(float),
-  &MBConv6_11_EXPD_BN_VARIANCE,	MBConv6_11_expansion_conv_BN_variance,sizeof(MBConv6_11_expansion_conv_BN_variance) / sizeof(float),
+  &MBConv6_11_EXPD_BN_VARIANCE,	MBConv6_11_expansion_conv_BN_variance,	sizeof(MBConv6_11_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_11_EXPD_BN_WEIGHTS,  MBConv6_11_expansion_conv_BN_weights,	sizeof(MBConv6_11_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_11_EXPD_BN_BIAS,			MBConv6_11_expansion_conv_BN_bias,		sizeof(MBConv6_11_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_11_EXPD_BN_BIAS,		MBConv6_11_expansion_conv_BN_bias,		sizeof(MBConv6_11_expansion_conv_BN_bias) / sizeof(float),
   &MBConv6_11_DW_BN_MEAN,       MBConv6_11_depthwise_conv_BN_mean,		sizeof(MBConv6_11_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_11_DW_BN_VARIANCE,		MBConv6_11_depthwise_conv_BN_variance,sizeof(MBConv6_11_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_11_DW_BN_VARIANCE,	MBConv6_11_depthwise_conv_BN_variance,	sizeof(MBConv6_11_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_11_DW_BN_WEIGHTS,    MBConv6_11_depthwise_conv_BN_weights,	sizeof(MBConv6_11_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_11_DW_BN_BIAS,				MBConv6_11_depthwise_conv_BN_bias,		sizeof(MBConv6_11_depthwise_conv_BN_bias) / sizeof(float),
-  &MBConv6_11_PRJ_BN_MEAN,      MBConv6_11_project_conv_BN_mean,		  sizeof(MBConv6_11_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_11_DW_BN_BIAS,		MBConv6_11_depthwise_conv_BN_bias,		sizeof(MBConv6_11_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_11_PRJ_BN_MEAN,      MBConv6_11_project_conv_BN_mean,		sieof(MBConv6_11_project_conv_BN_mean) / sizeof(float),
   &MBConv6_11_PRJ_BN_VARIANCE,	MBConv6_11_project_conv_BN_variance,	sizeof(MBConv6_11_project_conv_BN_variance) / sizeof(float),
   &MBConv6_11_PRJ_BN_WEIGHTS,   MBConv6_11_project_conv_BN_weights,		sizeof(MBConv6_11_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_11_PRJ_BN_BIAS,			MBConv6_11_project_conv_BN_bias, 		  sizeof(MBConv6_11_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_11_PRJ_BN_BIAS,		MBConv6_11_project_conv_BN_bias, 		sieof(MBConv6_11_project_conv_BN_bias) / sizeof(float));
 
   DEFINE_FILTERS_FOR_MBCONV_BN(	
   &MBConv6_12_EXPD_BN_MEAN,     MBConv6_12_expansion_conv_BN_mean,		sizeof(MBConv6_12_expansion_conv_BN_mean) / sizeof(float),
-  &MBConv6_12_EXPD_BN_VARIANCE,	MBConv6_12_expansion_conv_BN_variance,sizeof(MBConv6_12_expansion_conv_BN_variance) / sizeof(float),
+  &MBConv6_12_EXPD_BN_VARIANCE,	MBConv6_12_expansion_conv_BN_variance,	sizeof(MBConv6_12_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_12_EXPD_BN_WEIGHTS,  MBConv6_12_expansion_conv_BN_weights,	sizeof(MBConv6_12_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_12_EXPD_BN_BIAS,			MBConv6_12_expansion_conv_BN_bias,		sizeof(MBConv6_12_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_12_EXPD_BN_BIAS,		MBConv6_12_expansion_conv_BN_bias,		sizeof(MBConv6_12_expansion_conv_BN_bias) / sizeof(float),
   &MBConv6_12_DW_BN_MEAN,       MBConv6_12_depthwise_conv_BN_mean,		sizeof(MBConv6_12_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_12_DW_BN_VARIANCE,		MBConv6_12_depthwise_conv_BN_variance,sizeof(MBConv6_12_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_12_DW_BN_VARIANCE,	MBConv6_12_depthwise_conv_BN_variance,	sizeof(MBConv6_12_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_12_DW_BN_WEIGHTS,    MBConv6_12_depthwise_conv_BN_weights,	sizeof(MBConv6_12_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_12_DW_BN_BIAS,				MBConv6_12_depthwise_conv_BN_bias,		sizeof(MBConv6_12_depthwise_conv_BN_bias) / sizeof(float),
-  &MBConv6_12_PRJ_BN_MEAN,      MBConv6_12_project_conv_BN_mean,		  sizeof(MBConv6_12_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_12_DW_BN_BIAS,		MBConv6_12_depthwise_conv_BN_bias,		sizeof(MBConv6_12_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_12_PRJ_BN_MEAN,      MBConv6_12_project_conv_BN_mean,		sieof(MBConv6_12_project_conv_BN_mean) / sizeof(float),
   &MBConv6_12_PRJ_BN_VARIANCE,	MBConv6_12_project_conv_BN_variance,	sizeof(MBConv6_12_project_conv_BN_variance) / sizeof(float),
   &MBConv6_12_PRJ_BN_WEIGHTS,   MBConv6_12_project_conv_BN_weights,		sizeof(MBConv6_12_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_12_PRJ_BN_BIAS,			MBConv6_12_project_conv_BN_bias, 		  sizeof(MBConv6_12_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_12_PRJ_BN_BIAS,		MBConv6_12_project_conv_BN_bias, 		sieof(MBConv6_12_project_conv_BN_bias) / sizeof(float));
 
 DEFINE_FILTERS_FOR_MBCONV_BN(	
   &MBConv6_13_EXPD_BN_MEAN,     MBConv6_13_expansion_conv_BN_mean,		sizeof(MBConv6_13_expansion_conv_BN_mean) / sizeof(float),
-  &MBConv6_13_EXPD_BN_VARIANCE,	MBConv6_13_expansion_conv_BN_variance,sizeof(MBConv6_13_expansion_conv_BN_variance) / sizeof(float),
+  &MBConv6_13_EXPD_BN_VARIANCE,	MBConv6_13_expansion_conv_BN_variance,	sizeof(MBConv6_13_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_13_EXPD_BN_WEIGHTS,  MBConv6_13_expansion_conv_BN_weights,	sizeof(MBConv6_13_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_13_EXPD_BN_BIAS,			MBConv6_13_expansion_conv_BN_bias,		sizeof(MBConv6_13_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_13_EXPD_BN_BIAS,		MBConv6_13_expansion_conv_BN_bias,		sizeof(MBConv6_13_expansion_conv_BN_bias) / sizeof(float),
   &MBConv6_13_DW_BN_MEAN,       MBConv6_13_depthwise_conv_BN_mean,		sizeof(MBConv6_13_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_13_DW_BN_VARIANCE,		MBConv6_13_depthwise_conv_BN_variance,sizeof(MBConv6_13_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_13_DW_BN_VARIANCE,	MBConv6_13_depthwise_conv_BN_variance,	sizeof(MBConv6_13_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_13_DW_BN_WEIGHTS,    MBConv6_13_depthwise_conv_BN_weights,	sizeof(MBConv6_13_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_13_DW_BN_BIAS,				MBConv6_13_depthwise_conv_BN_bias,		sizeof(MBConv6_13_depthwise_conv_BN_bias) / sizeof(float),
-  &MBConv6_13_PRJ_BN_MEAN,      MBConv6_13_project_conv_BN_mean,		  sizeof(MBConv6_13_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_13_DW_BN_BIAS,		MBConv6_13_depthwise_conv_BN_bias,		sizeof(MBConv6_13_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_13_PRJ_BN_MEAN,      MBConv6_13_project_conv_BN_mean,		sieof(MBConv6_13_project_conv_BN_mean) / sizeof(float),
   &MBConv6_13_PRJ_BN_VARIANCE,	MBConv6_13_project_conv_BN_variance,	sizeof(MBConv6_13_project_conv_BN_variance) / sizeof(float),
   &MBConv6_13_PRJ_BN_WEIGHTS,   MBConv6_13_project_conv_BN_weights,		sizeof(MBConv6_13_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_13_PRJ_BN_BIAS,			MBConv6_13_project_conv_BN_bias, 		  sizeof(MBConv6_13_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_13_PRJ_BN_BIAS,		MBConv6_13_project_conv_BN_bias, 		sieof(MBConv6_13_project_conv_BN_bias) / sizeof(float));
 
 DEFINE_FILTERS_FOR_MBCONV_BN(	
   &MBConv6_14_EXPD_BN_MEAN,     MBConv6_14_expansion_conv_BN_mean,		sizeof(MBConv6_14_expansion_conv_BN_mean) / sizeof(float),
-  &MBConv6_14_EXPD_BN_VARIANCE,	MBConv6_14_expansion_conv_BN_variance,sizeof(MBConv6_14_expansion_conv_BN_variance) / sizeof(float),
+  &MBConv6_14_EXPD_BN_VARIANCE,	MBConv6_14_expansion_conv_BN_variance,	sizeof(MBConv6_14_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_14_EXPD_BN_WEIGHTS,  MBConv6_14_expansion_conv_BN_weights,	sizeof(MBConv6_14_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_14_EXPD_BN_BIAS,			MBConv6_14_expansion_conv_BN_bias,		sizeof(MBConv6_14_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_14_EXPD_BN_BIAS,		MBConv6_14_expansion_conv_BN_bias,		sizeof(MBConv6_14_expansion_conv_BN_bias) / sizeof(float),
   &MBConv6_14_DW_BN_MEAN,       MBConv6_14_depthwise_conv_BN_mean,		sizeof(MBConv6_14_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_14_DW_BN_VARIANCE,		MBConv6_14_depthwise_conv_BN_variance,sizeof(MBConv6_14_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_14_DW_BN_VARIANCE,	MBConv6_14_depthwise_conv_BN_variance,	sizeof(MBConv6_14_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_14_DW_BN_WEIGHTS,    MBConv6_14_depthwise_conv_BN_weights,	sizeof(MBConv6_14_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_14_DW_BN_BIAS,				MBConv6_14_depthwise_conv_BN_bias,		sizeof(MBConv6_14_depthwise_conv_BN_bias) / sizeof(float),
-  &MBConv6_14_PRJ_BN_MEAN,      MBConv6_14_project_conv_BN_mean,		  sizeof(MBConv6_14_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_14_DW_BN_BIAS,		MBConv6_14_depthwise_conv_BN_bias,		sizeof(MBConv6_14_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_14_PRJ_BN_MEAN,      MBConv6_14_project_conv_BN_mean,		sieof(MBConv6_14_project_conv_BN_mean) / sizeof(float),
   &MBConv6_14_PRJ_BN_VARIANCE,	MBConv6_14_project_conv_BN_variance,	sizeof(MBConv6_14_project_conv_BN_variance) / sizeof(float),
   &MBConv6_14_PRJ_BN_WEIGHTS,   MBConv6_14_project_conv_BN_weights,		sizeof(MBConv6_14_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_14_PRJ_BN_BIAS,			MBConv6_14_project_conv_BN_bias, 		  sizeof(MBConv6_14_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_14_PRJ_BN_BIAS,		MBConv6_14_project_conv_BN_bias, 		sieof(MBConv6_14_project_conv_BN_bias) / sizeof(float));
 
 DEFINE_FILTERS_FOR_MBCONV_BN(	
   &MBConv6_15_EXPD_BN_MEAN,     MBConv6_15_expansion_conv_BN_mean,		sizeof(MBConv6_15_expansion_conv_BN_mean) / sizeof(float),
-  &MBConv6_15_EXPD_BN_VARIANCE,	MBConv6_15_expansion_conv_BN_variance,sizeof(MBConv6_15_expansion_conv_BN_variance) / sizeof(float),
+  &MBConv6_15_EXPD_BN_VARIANCE,	MBConv6_15_expansion_conv_BN_variance,	sizeof(MBConv6_15_expansion_conv_BN_variance) / sizeof(float),
   &MBConv6_15_EXPD_BN_WEIGHTS,  MBConv6_15_expansion_conv_BN_weights,	sizeof(MBConv6_15_expansion_conv_BN_weights) / sizeof(float),
-  &MBConv6_15_EXPD_BN_BIAS,			MBConv6_15_expansion_conv_BN_bias,		sizeof(MBConv6_15_expansion_conv_BN_bias) / sizeof(float),
+  &MBConv6_15_EXPD_BN_BIAS,		MBConv6_15_expansion_conv_BN_bias,		sizeof(MBConv6_15_expansion_conv_BN_bias) / sizeof(float),
   &MBConv6_15_DW_BN_MEAN,       MBConv6_15_depthwise_conv_BN_mean,		sizeof(MBConv6_15_depthwise_conv_BN_mean) / sizeof(float),
-  &MBConv6_15_DW_BN_VARIANCE,		MBConv6_15_depthwise_conv_BN_variance,sizeof(MBConv6_15_depthwise_conv_BN_variance) / sizeof(float),	
+  &MBConv6_15_DW_BN_VARIANCE,	MBConv6_15_depthwise_conv_BN_variance,	sizeof(MBConv6_15_depthwise_conv_BN_variance) / sizeof(float),	
   &MBConv6_15_DW_BN_WEIGHTS,    MBConv6_15_depthwise_conv_BN_weights,	sizeof(MBConv6_15_depthwise_conv_BN_weights) / sizeof(float),
-  &MBConv6_15_DW_BN_BIAS,				MBConv6_15_depthwise_conv_BN_bias,		sizeof(MBConv6_15_depthwise_conv_BN_bias) / sizeof(float),
-  &MBConv6_15_PRJ_BN_MEAN,      MBConv6_15_project_conv_BN_mean,		  sizeof(MBConv6_15_project_conv_BN_mean) / sizeof(float),
+  &MBConv6_15_DW_BN_BIAS,		MBConv6_15_depthwise_conv_BN_bias,		sizeof(MBConv6_15_depthwise_conv_BN_bias) / sizeof(float),
+  &MBConv6_15_PRJ_BN_MEAN,      MBConv6_15_project_conv_BN_mean,		sieof(MBConv6_15_project_conv_BN_mean) / sizeof(float),
   &MBConv6_15_PRJ_BN_VARIANCE,	MBConv6_15_project_conv_BN_variance,	sizeof(MBConv6_15_project_conv_BN_variance) / sizeof(float),
   &MBConv6_15_PRJ_BN_WEIGHTS,   MBConv6_15_project_conv_BN_weights,		sizeof(MBConv6_15_project_conv_BN_weights) / sizeof(float),
-  &MBConv6_15_PRJ_BN_BIAS,			MBConv6_15_project_conv_BN_bias, 		  sizeof(MBConv6_15_project_conv_BN_bias) / sizeof(float));
+  &MBConv6_15_PRJ_BN_BIAS,		MBConv6_15_project_conv_BN_bias, 		sieof(MBConv6_15_project_conv_BN_bias) / sizeof(float));
 
 
 set_allocate_copy_array_Device(&D_STEM_BN_MEAN, Stem_BN_mean,
-                sizeof(Stem_BN_mean)/sizeof(float), 1, 1,
-                "STEM MEAN"); 
+								sizeof(Stem_BN_mean)/sizeof(float), 1, 1,
+								"STEM MEAN"); 
 set_allocate_copy_array_Device(&D_STEM_BN_VARIANCE, Stem_BN_variance,
-                sizeof(Stem_BN_variance)/sizeof(float), 1, 1,
-                "STEAM VARIANCE"); 
+								sizeof(Stem_BN_variance)/sizeof(float), 1, 1,
+								"STEAM VARIANCE"); 
 set_allocate_copy_array_Device(&D_STEM_BN_WEIGHTS, Stem_BN_weights,
-                sizeof(Stem_BN_weights)/sizeof(float), 1, 1,
-                "STEM WEIGHTS"); 
+								sizeof(Stem_BN_weights)/sizeof(float), 1, 1,
+								"STEM WEIGHTS"); 
 set_allocate_copy_array_Device(&D_STEM_BN_BIAS, Stem_BN_bias,
-                sizeof(Stem_BN_bias)/sizeof(float), 1, 1,
-                "STEM BIAS"); 
+								sizeof(Stem_BN_bias)/sizeof(float), 1, 1,
+								"STEM BIAS"); 
                 
 set_allocate_copy_array_Device(&D_HEAD_BN_MEAN, Head_BN_mean,
-                sizeof(Head_BN_mean)/sizeof(float), 1, 1,
-                "HEAD MEAN"); 
+								sizeof(Head_BN_mean)/sizeof(float), 1, 1,
+								"HEAD MEAN"); 
 set_allocate_copy_array_Device(&D_HEAD_BN_VARIANCE, Head_BN_variance,
-                sizeof(Head_BN_variance)/sizeof(float), 1, 1,
-                "HEAD VARIANCE"); 
+								sizeof(Head_BN_variance)/sizeof(float), 1, 1,
+								"HEAD VARIANCE"); 
 set_allocate_copy_array_Device(&D_HEAD_BN_WEIGHTS, Head_BN_weights,
-                sizeof(Head_BN_weights)/sizeof(float), 1, 1,
-                "HEAD WEIGHTS"); 
+								sizeof(Head_BN_weights)/sizeof(float), 1, 1,
+								"HEAD WEIGHTS"); 
 set_allocate_copy_array_Device(&D_HEAD_BN_BIAS, Head_BN_bias,
-                sizeof(Head_BN_bias)/sizeof(float), 1, 1,
-                "HEAD BIAS"); 
+								sizeof(Head_BN_bias)/sizeof(float), 1, 1,
+								"HEAD BIAS"); 
+								
+
 start();
   // 3. Move through all layers starting from stem layer till head layer
   Matrix ConvOutStem;

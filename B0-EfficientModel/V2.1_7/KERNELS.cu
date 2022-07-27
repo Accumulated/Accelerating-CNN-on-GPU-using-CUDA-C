@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -11,6 +10,8 @@
 
 #include "/content/MBCONVS_float/functionsV2.h"
 #include "/content/MBCONVS_float/KERNELSH.h"
+
+#define WARP_SIZE 32
 
 /* Kernel definitions */
 __global__ void INPUT_UNROLLING(int stride, int Filter_Height,
@@ -262,7 +263,6 @@ __global__ void Complete_Padding_Process(float *Original_Padded, int H1, int W1,
                                          int padding_value)
 {   
     // There must be a constant shift between indeces in 2 matrices
-    // The code is based on x axis only
     int row = blockIdx.y * blockDim.y + threadIdx.y;
     int col = blockIdx.x * blockDim.x + threadIdx.x;
     int depth = blockIdx.z * blockDim.z + threadIdx.z;
@@ -309,27 +309,31 @@ __global__ void BN_Kernel_Mean_Reduction(float *input, int H1, int W1, int D1,
         partialSum[tx] = tmp;
 
     if (tx + bx + start < W1 && start_yDir < H1 * W1)
-        partialSum[bx + tx] = input[start + bx + tx + start_yDir];
+        partialSum[tx] += input[start + bx + tx + start_yDir];
     else
-        partialSum[bx + tx] = tmp;
-
-
-    unsigned int stride = 0;
+        partialSum[tx] += tmp;
 
     __syncthreads();
 
-    for (stride = blockDim.x; stride > 0; stride = stride / 2.0f)
+    for (unsigned int stride = blockDim.x / 2; stride > WARP_SIZE; stride = stride / 2.0f)
     {
-        __syncthreads();
         if (tx < stride)
             partialSum[tx] += partialSum[tx + stride];
+        __syncthreads();
     }
 
-    __syncthreads();
-
-
+    // Reduction tree with shuffle instructions
+    float sum = 0;
+    if(tx < WARP_SIZE) 
+    {
+      sum = partialSum[tx] + partialSum[tx + WARP_SIZE];
+      for(unsigned int stride = WARP_SIZE/2; stride > 0; stride /= 2) 
+      {
+        sum += __shfl_down_sync(0xffffffff, sum, stride);
+      }
+    }
     if (tx == 0)
-        Mean[bx_index + by_index * W2] = partialSum[tx];
+        Mean[bx_index + by_index * W2] = sum;
 
 }
 
