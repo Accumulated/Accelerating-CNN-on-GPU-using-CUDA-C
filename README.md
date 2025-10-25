@@ -1,3 +1,8 @@
+> **⚠️ Update Notice**
+>
+> This repository has been **superseded** by a newer version that includes a **C++ implementation** and **batch processing support**.  
+> [**HPC-CNN-Accelerator**](https://github.com/Accumulated/HPC-CNN-Accelerator) for the latest updates and development.
+
 # Accelerating CNN on GPU using CUDA C
 
 The current CUDA model is implementing EfficientNet-B0 and uses pretrained weights which you can find and use in this link:
